@@ -1,0 +1,14 @@
+server:
+  port: 17074
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka17071.com:17071/eureka,http://eureka17072.com:17072/eureka
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+logging:
+  level:
+    com.andrew.springcloud.service.PaymentFeignService: debug
