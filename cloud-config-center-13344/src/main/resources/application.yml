@@ -1,0 +1,18 @@
+server:
+  port: 13344
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:17071/eureka/
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:Andrew-Yang999/cloud.exercise.git
+          search-paths:
+            - springcloud-config
+          default-label: master
