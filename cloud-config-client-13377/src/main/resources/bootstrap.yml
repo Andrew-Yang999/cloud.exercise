@@ -1,5 +1,5 @@
 server:
-  port: 13355
+  port: 13377
 
 spring:
   application:
@@ -20,7 +20,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:17071/eureka
-
 
 # 暴露监控端口
 management:

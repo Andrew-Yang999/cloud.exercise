@@ -16,3 +16,20 @@ spring:
           search-paths:
             - springcloud-config
           default-label: master
+  #rabbitmq相关配置
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+#rabbitmq相关配置,暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
+
+logging:
+  level:
+    root:
+      INFO
