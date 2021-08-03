@@ -15,6 +15,7 @@ spring:
           uri: lb://cloud-payment-service #匹配后提供服务的路由地址
           predicates:
             - Path=/payment/get/**
+            - After=   #地区时间
         - id: payment_routh2
 #          uri: http://localhost:18081
           uri: lb://cloud-payment-service #匹配后提供服务的路由地址
